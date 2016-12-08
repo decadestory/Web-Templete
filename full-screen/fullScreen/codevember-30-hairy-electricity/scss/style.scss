@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.grad:after {
+	content: '';
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.grad::after {
+	background: radial-gradient(circle at top, #870000 , #190A05);
+}

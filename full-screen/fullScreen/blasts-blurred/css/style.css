@@ -1,0 +1,102 @@
+.p {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: inherit;
+  background-color: currentColor;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  -webkit-animation: blast 3s infinite ease-in;
+          animation: blast 3s infinite ease-in;
+}
+
+.p1 {
+  -webkit-animation-delay: -5;
+          animation-delay: -5;
+}
+
+.p2 {
+  -webkit-animation-delay: -5.5s;
+          animation-delay: -5.5s;
+}
+
+.p3 {
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.p4 {
+  -webkit-animation-delay: -6.5s;
+          animation-delay: -6.5s;
+}
+
+.p5 {
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.p6 {
+  -webkit-animation-delay: -7.5s;
+          animation-delay: -7.5s;
+}
+
+body {
+  background-color: black;
+  /*   filter: blur(1px); */
+  -webkit-animation: color 20s infinite;
+          animation: color 20s infinite;
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: red;
+  }
+  33% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: red;
+  }
+  33% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+@-webkit-keyframes blast {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes blast {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}

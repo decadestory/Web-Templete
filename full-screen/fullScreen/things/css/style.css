@@ -1,0 +1,13 @@
+canvas {
+  background: linear-gradient(#29d 0%, #8df 50%, #696 50%, #3a3);
+  display: block; 
+}
+
+h1 {
+  color: #fff;
+  font: bold 30px/30px helvetica, arial, sans-serif;
+   position: absolute; 
+  left: 20px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, .3);
+  top: 20px;
+}

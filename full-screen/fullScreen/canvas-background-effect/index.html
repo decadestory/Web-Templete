@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Background Effect</title>
+  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body {
+    margin: 0;
+    padding: 0
+}
+#pixie {
+    position:fixed;
+    background-color: #164979;
+    width:100%;
+    height:100%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#040429', endColorstr='#257EB7', GradientType=0);
+    /* IE6-9 */
+    background: -ms-linear-gradient(top, #0E2A55 40%, #0E2A55 40%, #1D6196 60%);
+    /* IE10+ */
+    background: -webkit-gradient(linear, center top, center bottom, from(#040429), to(#257EB7));
+    /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(center top, #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background: -moz-linear-gradient(center top, #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /* Firefox 3.6-15 */
+    background: -o-linear-gradient(center top, #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /* Opera 11.10-12.00 */
+    background: linear-gradient(center top, #040429, #257EB7) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    margin:0;
+    padding:0;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <canvas id="pixie"></canvas>
+<div class="container"></div>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

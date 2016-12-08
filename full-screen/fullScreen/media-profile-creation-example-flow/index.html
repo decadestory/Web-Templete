@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Media Profile Creation example flow</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div id="container" class="container">
+    <div id="output" class="container"></div>
+    <div class="home-content">
+        <header class="adHeader adBar">
+            <img class="attLogo" src="img/logo.png" />
+            <p class="subtitle fancy"><span>Watch Star Wars Episode VII Trailer</span></p>
+        </header>
+        <div id="login">
+            <form>
+                <label for="device-input">Device ID </label><input id="device-input" type="text" name="device" />
+                <label for="user-input">User ID </label><input id="user-input" type="text" name="text" />
+                <div id="login-btn" class="standard-btn">Login</div>
+            </form>
+        </div>
+
+        <div id="signup" class="display-none">
+            <p>No profile found. Let's create one!</p>
+            <p>By telling us what you like and dislike, you can help us to recommend the content we know you'll love.</p>
+            <div id="intro-next" class="standard-btn">Next</div>
+
+        </div>
+
+        <div id="titles" class="display-none">
+            <h2>Titles</h2>
+            <div id="titles-list"></div>
+            <div id="titles-next" class="standard-btn">Next</div>
+        </div>
+
+        <div id="people" class="display-none">
+            <h2>People</h2>
+            <ul id="people-list" class="selectable"></ul>
+            <div id="people-next" class="standard-btn">Next</div>
+        </div>
+
+        <div id="genres" class="display-none">
+            <h2>Genres and Keywords</h2>
+            <ul id="genres-list" class="selectable"></ul>
+            <div id="genres-next" class="standard-btn">Next</div>
+        </div>
+
+        <div id="channels" class="display-none">
+            <h2>Channels</h2>
+            <ul id="channels-list" class="selectable"></ul>
+            <div id="channels-next" class="standard-btn">Finish</div>
+        </div>
+
+        <div id="lockers" class="display-none">
+            <h2>Profile</h2>
+            <h3>Liked</h3>
+            <div class="standard-btn add-to-locker" data-lockerId="1">Add</div>
+            <div id="liked-items"></div>
+            <h3>Disliked</h3>
+            <div class="standard-btn add-to-locker" data-lockerId="2">Add</div>
+            <div id="disliked-items"></div>
+        </div>
+        <div id="add-dialog" class="display-none">
+            <form>
+                <label for="add-input">Search Phrase </label><input id="add-input" type="text" name="add" />
+                <label for="add-type">Search Type </label>
+                <select id="add-type">
+                    <option value="title">Title</option>
+                    <option value="person">Person</option>
+                    <option value="keyword">Keyword/Genre</option>
+                    <option value="channel">Channel</option>
+                </select>
+            </form>
+            <div class="standard-btn" id="search-item" style="position:relative; top:15px;">Search</div>
+            <div class="standard-btn" class="cancel-btn" style="position:relative; top:15px;">Cancel</div>
+        </div>
+        <div id="add-results" class="display-none">
+            <h2>Results</h2>
+            <div id="add-results-list" class="selectable"></div>
+            <div class="standard-btn" id="add-finalize" style="position:relative; top:15px;">Add Selections</div>
+            <div class="standard-btn" class="cancel-btn" style="position:relative; top:15px;">Cancel</div>
+        </div>
+    </div>
+</div>
+<div id="controls" class="controls hide">
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js'></script>
+<script src="js/knockout-3_4_0.js"></script>
+<script src="js/index-tabs.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/index-bg.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<div id="item-template" class="card darth display-none">
+    <div class="face front" >
+        <div class="bottom-banner">
+            <div class="share-buttons">
+
+                <div class="share-button">
+                    <div class="share-button-secondary">
+                        <div class="share-button-secondary-content">
+                            <span class="like-span like-select">Like</span>/<span class="dislike-span like-select">Dislike</span>
+                        </div>
+                    </div>
+                    <div class="share-button-primary">
+                        <i class="share-button-icon fa fa-thumbs-o-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js'></script>
+<script src='js/http___codepen_io_wolf_w_.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

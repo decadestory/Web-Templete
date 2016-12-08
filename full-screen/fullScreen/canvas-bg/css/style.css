@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background:#060e1b;
+  overflow:hidden;
+}
+canvas{
+  opacity:.5;
+  position:absolute;
+  left:0;top:0;
+}
